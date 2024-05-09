@@ -1,25 +1,27 @@
 @import url('https://db.onlinewebfonts.com/c/02a5628b91717ae7191a2b202a5e93a4?family=Orelo+SemiWide+Regular');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    color: var(--earth);
+    color: var(--carob);
 }
 :root{
-    --cream: #ecd9b9;
-    --nude: #dbc49f;
-    --rose: #d4b2a7;
-    --earth: rgb(116, 83, 57);
-    --earth2: #6e2310;
+    --almond: #e5e0d8;
+    --vanilla: #e5d2b8;
+    --matcha: #809671;
+    --carob: #725c3a;
+    --pistache: #b3b792;
 }
 html{
-    font-family: "Open Sans";
+    font-family: 'Teachers', sans-serif;
+    font-weight: 100;
     font-size: 62.5%;
-    background-color: var(--cream);
+    background-color: var(--almond);
 }
 body{
     display: flex;
@@ -28,4 +30,8 @@ body{
 }
 body > *{
     padding: 0 10vw;
+}
+section, article, main, footer, header{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }

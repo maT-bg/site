@@ -3,30 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <title>Isabela Psico</title>
 </head>
 <body>
-    <!-- <nav>
-        <ul class="menu">
-            <li class="menu-item"><a href="">Contato</a></li>
-            <li class="menu-item"><a href="">Serviços</a></li>
-            <li class="menu-item"><a href="">Sobre mim</a></li>
-            <li class="menu-item"><a href="">Dúvidas</a></li>
-        </ul>
-    </nav> -->
     <header>
         <section>
             <h1>Isabela Borges</h1>
             <h2>Psicoterapeuta e Neuropsicóloga</h2>
             <h3>CRP: 06/195288</h3>
             <div class="highlights">
-                <span class="highlights-item"><img src="img/icons/chamada-de-video.png" alt="online"/>Psicoterapia<br>Online</span>
-                <span class="highlights-item"><img src="img/icons/julgando.png" alt="Sem Julgamento">Sem<br>Julgamento</span>
-                <span class="highlights-item"><img src="img/icons/amor-proprio.png" alt="Acolhimento">Atendimento<br>Acolhimento</span>
-                <span class="highlights-item"><img src="img/icons/bem-estar.png" alt="Saúde">Saúde<br>Mental</span>
+                <span class="highlights-item"><img src="img/icons/chamada-de-video.png" alt="online"/>Terapia Online</span>
+                <span class="highlights-item"><img src="img/icons/amor-proprio.png" alt="Acolhimento">Acolhimento</span>
+                <span class="highlights-item"><img src="img/icons/bem-estar.png" alt="Saúde">Saúde Mental</span>
             </div>
             
         </section>
@@ -79,11 +69,12 @@
                         Aborda o transtorno do neurodesenvolvimento, destacando a importância da avaliação psicológica para identificar precocemente o autismo e planejar intervenções personalizadas.
                     </p>
                 </div>             
-
+                
             </div>
         </div>
     </main>
-    <article class="blockquote"><q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, odit? Unde ratione voluptatum voluptas perspiciatis asperiores vero maxime incidunt cum aspernatur, expedita voluptate deleniti temporibus consequuntur, ut itaque nam corrupti.</q></article>
+    <article class="blockquote"><q>O nosso cérebro é o melhor brinquedo já criado: nele se encontram todos os segredos, inclusive o da felicidade.</q> - Charles Chaplin
+    </article>
     <section>
         <h4>Sobre mim</h4>
         <div>
@@ -96,37 +87,77 @@
     </section>
     <section>
         <h4>Entre em Contato comigo!</h4>
-        <div class="contact-card">zap</div>
-        <div class="contact-card">intas</div>
-        <div class="contact-card">phone</div>
-        <div class="contact-card">email</div>
+        <div class="contacts-container">
+            <a class="contact-card" href="mailto:isabelaborges.psico@gmail.com" target="_blank">
+                <img src="img/icons/email.png">
+                <span>
+                    E-mail:<br>
+                    isabelaborges.psico@gmail.com
+                </span>
+            </a>
+            
+            <a class="contact-card" href="https://api.whatsapp.com/send/?phone=5511953353565&text=Olá%2C+tudo+bem%3F&type=phone_number&app_absent=0" target="_blank">
+                <img src="img/icons/whatsapp.png">
+                <span>WhatsApp</span>
+            </a>
+            
+            <a class="contact-card" href="https://www.instagram.com/psi.isabelaborges/" target="_blank">
+                <img src="img/icons/instagram.png">
+                <span>Instagram</span>
+            </a> 
+            
+        </div>
     </section>
     <section>
-        <h4>FAQ</h4>
-        <div>
-            <p>P: Quanto tempo dura um sessão de terapia?</p>
-            <p>R: Uma sessão típica de terapia dura em média 50 minutos;</p>
-        </div>
-        
-        <div>
-            <p>P: O psicologo pode compartilhar o conteudo das sessões com terceiros?</p>
-            <p>R: De acordo com o Código de Ética do Psicologo, Artigo 9°, o psicologo tem o dever de manter o sigilo profissional no intuito de proteger a intimidade do paciente. O contato com familiares ou terceiros ocorrera somente com consentimento do cliente ou ordem judicial;</p>
-        </div>
-        
-        <div>
-            <p>P: Quanto tempo dura o acompanhamento psicológico</p>
-            <p>R: Depende, o tempo do tratamento varia de acordo com a demanda, disponibilidade e objetivos a serem alcançados com o acompanhamento psicológico;</p>
-        </div>
-        
-        <div>
-            <p>P: Psicologo pode receitar medicações?</p>
-            <p>R: Não, apenas profissionais médicos podem receitar medicamentos. Na área da saúde mental o psiquiatras são os mais aptos a prestar tal serviço e os psicologos são responsaveis por acompanhar o quadro clínico e efeitos adversos;</p>
-        </div>
-    </section>
-    <footer>
-        isabela asldasjdnask dkna rodape
-        
-    </footer>
-    <script src="slider.js"></script>
-</body>
-</html>
+        <div class="faq">
+            <div>
+                <input type="checkbox" id="question1" name="q"  class="questions">
+                <div class="plus">+</div>
+                <label for="question1" class="question">
+                    Quanto tempo dura um sessão de terapia?
+                </label>
+                <div class="answers">
+                    Uma sessão típica de terapia dura em média 50 minutos.</div>
+                </div>
+                
+                <div>
+                    <input type="checkbox" id="question2" name="q" class="questions">
+                    <div class="plus">+</div>
+                    <label for="question2" class="question">
+                        O psicologo pode compartilhar o conteudo das sessões com terceiros?
+                    </label>
+                    <div class="answers">
+                        De acordo com o Código de Ética do Psicologo, Artigo 9°, o psicologo tem o dever de manter o sigilo profissional no intuito de proteger a intimidade do paciente. O contato com familiares ou terceiros ocorrera somente com consentimento do cliente ou ordem judicial.
+                    </div>
+                </div>
+                
+                <div>
+                    <input type="checkbox" id="question3" name="q" class="questions">
+                    <div class="plus">+</div>
+                    <label for="question3" class="question">
+                        Quanto tempo dura o acompanhamento psicológico?  
+                    </label>
+                    <div class="answers">
+                        Depende, o tempo do tratamento varia de acordo com a demanda, disponibilidade e objetivos a serem alcançados com o acompanhamento psicológico!
+                    </div>
+                </div>
+                
+                <div>
+                    <input type="checkbox" id="question4" name="q" class="questions">
+                    <div class="plus">+</div>
+                    <label for="question4" class="question">
+                        Psicologo pode receitar medicações?  
+                    </label>
+                    <div class="answers">
+                        Não, apenas profissionais médicos podem receitar medicamentos. Na área da saúde mental o psiquiatras são os mais aptos a prestar tal serviço e os psicologos são responsaveis por acompanhar o quadro clínico e efeitos adversos.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            isabela asldasjdnask dkna rodape
+            
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+    </html>
